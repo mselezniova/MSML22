@@ -6,12 +6,9 @@ The goal of this task is to implement  and test **Mini-batch Stochastic Gradient
 1. **Initialize** trainable parameters $w = w^{(0)}$. Set $k=0$. 
 2. **While** epoch $k < K$: 
     - **While** $i < \lceil |X| / B\rceil$:
-         - Sample batch $(X_i,Y_i)$ of size $B$ from $(X,Y)$ randomly without replacement.
-         - Run a GD update on the batch:
-$$w \leftarrow w - \eta \nabla_w  R (w,X_i,Y_i)$$
-         - Update $i$: $i=i+1$
-
-         
+        - Sample batch $(X_i,Y_i)$ of size $B$ from $(X,Y)$ randomly without replacement.
+        - Run a GD update on the batch: $$w \leftarrow w - \eta \nabla_w  R (w,X_i,Y_i)$$
+        - Update $i$: $$i=i+1$$ 
    - Update epoch number $k$: $$k = k+1$$
 3. **Return** $w$.
 
