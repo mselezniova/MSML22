@@ -10,12 +10,12 @@ The task is to predict MEDV variable (median house price) using all the other va
 - Plot the behaviour of the final train MSE, test MSE and the coefficients norm as a function of $\lambda$ (as we did for Ridge in the exercise class). Observe what values of $\lambda$ allow to decrease the norm of $w$ without significantly worsening the regression performance.
 - Plot the behaviour of each coefficient in $w$ as a function of $\lambda$ to see which coefficients are zeroed out as we increase the regularization hyperparameter. You graph can look as follows: 
 
-![coefs](https://raw.githubusercontent.com/mselezniova/MSML22/main/week5/exercise/coefs.png)
+![coefs](https://github.com/mselezniova/MSML22/blob/media/week5/images/coefs.png?raw=true)
 
 Here the legend, which should show which variable corresponds to each line, is hidden. You should show the legend in your notebook.
 - Find the last few (e.g. 4-6) variables that do not zero out as the regularization hyperparameter increases. Write what these variables mean in your notebook. 
 - What $\lambda$ value is needed to obtain a model with only these variables not zeroed? Train such a model and plot/print coefficients corresponding to your "active" variables. Which variables affect the housing price positively and which affect it negatively? You can visualize the coefficients as follows:
 
-![coefs](https://raw.githubusercontent.com/mselezniova/MSML22/main/week5/exercise/coef_vals.png)
+![coefs](https://github.com/mselezniova/MSML22/blob/media/week5/images/coef_vals.png?raw=true)
 
 Here the x ticks labels, which should show the names of the variables in the x axis, are hidden. Show them in your notebook.
