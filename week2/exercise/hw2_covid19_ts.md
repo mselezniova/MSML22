@@ -17,5 +17,5 @@ Summing up, you should choose two countries present in the dataset and produce t
 
 Below you can see the examples of the two figures. Of course, your graphs can look different as long as they provide the same information.
 
-![](https://raw.githubusercontent.com/mselezniova/MSML22/main/week2/exercise/fig1.svg)
-![](https://raw.githubusercontent.com/mselezniova/MSML22/main/week2/exercise/fig2.svg)
+![](https://raw.githubusercontent.com/mselezniova/MSML22/media/week2/images/fig1.svg)
+![](https://raw.githubusercontent.com/mselezniova/MSML22/media/week2/images/fig2.svg)
