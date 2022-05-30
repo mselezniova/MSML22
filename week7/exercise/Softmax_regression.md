@@ -5,7 +5,8 @@ The goal of this task is to implement the **softmax regression** model and apply
 You need to:
 
 - Implement a ```SoftmaxRegression``` class as a child class of ```LinearMulticlassClassification```. The softmax regression model uses the so-called **softmax activation function** given by: 
-$$h(x) = {\operatorname{softmax}} (W^Tx + B)\in\mathbb{R}^K \Leftrightarrow [h(x)]_k = \dfrac{e^{w_k^Tx+b_k}}{\sum_{j=1}^K e^{w_j^Tx+b_j}}, 1\leq k \leq K,$$
+$$h(x) = {\operatorname{softmax}} (W^Tx + B)\in\mathbb{R}^K$$
+$$\Leftrightarrow  h_k(x) = \frac{ \exp(w_k^Tx+b_k) }{\sum_{j=1}^K \exp(w_j^Tx+b_j) }, 1\leq k \leq K,$$
 where $K\in\mathbb{N}$ is the number of classes, $d\in\mathbb{N}$ is the dimensionality (number of features) of $x\in\mathcal{X}$, $W=[w_1,\dots,w_2]\in\mathbb{R}^{d\times K}$ is the matrix of coefficients and $B=[b_1,\dots,b_k]\in\mathbb{R}^{K}$ is the vector of biases. The model also uses **cross-entropy loss** given by:
 $$\mathcal{R}(y,\hat{y}) = \sum_{k=1}^K y[k]\log \bigl(\hat{y}[k]\bigr),$$
 where we assumed that the outputs are given by one-hot encoding of the class labels, i.e. $y=[0,\dots 1,\dots 0]$ where the index of $'1'$ indicates to the class. You can use full-batch GD for training (already implemented in the exercise class).
