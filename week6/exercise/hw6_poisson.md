@@ -8,6 +8,6 @@ The goal of this task is to implement Poission regression and apply it to [Seoul
 - Carry out **min-max normalization** of the data columns to avoid numerical problems.
 - Implement a **Poission regression** model as a child class of the ```LinearRegression``` class. The output function of this model is given by: $$h(x) = e^{\langle w, x\rangle + b},$$ i.e. Poisson regression uses **exponential activation function** $\alpha(t)=e^t$. And the loss function is given by the so-called **Poisson loss**: $$\mathcal{R}(y,\hat{y})=\hat y- y \log \hat y,$$ where $y$ is the true answer and $\hat{y}$ is the model's prediction.
 - Train the Poission regression model on the data. Plot the learning curve. 
-- Add ```mean_abs_error``` method to ```LinearRegression``` class. The method should compute mean absolute deviation of the model's predictions from the true answers: $$Err((x_i,y_i)_{i=1}^n) =\dfrac{1}{n}\sum_{i=1}^n|h(x_i)-y_i|$$
+- Add ```mean_abs_error``` method to ```LinearRegression``` class. The method should compute mean absolute deviation of the model's predictions from the true answers: $$E(X,Y) = \dfrac{1}{n} \sum_{i=1}^n |h(x_i)-y_i| $$
 - Compute mean absolute error of your trained Poisson regression model on train and test.
 - Train a linear regression model on the same data. Compute train and test mean absolute error. How does the performance compare to the Poisson regression model?
