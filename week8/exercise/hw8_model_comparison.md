@@ -1,4 +1,4 @@
-# Week 7 (E): Model Comparison
+# Week 8 (E): Model Comparison
 
 The goal of this task is to compare preformance of multiclass classification models covered in our classes so far on the [Letter Recognition Data Set](https://archive.ics.uci.edu/ml/datasets/Letter+Recognition), which we already used in the last homework. You need to:
 
